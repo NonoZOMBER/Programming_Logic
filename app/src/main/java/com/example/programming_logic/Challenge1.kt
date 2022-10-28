@@ -14,5 +14,13 @@ package com.example.programming_logic
  */
 
 fun main() {
+    println(anagrama("amor", "hola"))
+}
+
+fun anagrama(p1:String, p2:String) : Boolean {
+    if (p1.lowercase() == p2.lowercase()) {
+        return false
+    } else return p1.lowercase().toCharArray().sortedArray()
+        .contentEquals(p2.lowercase().toCharArray().sortedArray())
 
 }
